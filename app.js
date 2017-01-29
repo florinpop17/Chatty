@@ -16,3 +16,8 @@ server.listen(PORT, function(){
 app.get('/', function(req, res){
     res.sendFile(__dirname + path + '/index.html');
 });
+
+io.sockets.on('connection', function(socket){
+    connections.push(socket);
+    console.log('Connected: %s sockets connected.', connections.length);
+});
