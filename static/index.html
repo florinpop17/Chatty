@@ -2,46 +2,52 @@
 	"http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-	  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Chatty</title>
-	  
-	  <!--Bootstrap CSS-->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="screen">
-	  <!--my Style-->
-	  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chatty</title>
+
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="screen">
+        <!--my Style-->
+        <style>
+            body {
+                margin-top: 30px;
+            }
+        </style>
 	</head>
 	<body>
 	
-	<div class="container">
-	    <div class="row">
-	        <div class="col-md-4">
-	            <div class="well">
-	                <h3>Online Users</h3>
-	                <ul class="list-group" id="users"></ul>
-	            </div>
-	        </div>
-	        <div class="col-md-8">
-	            <div class="chat" id="chat"></div>
-	            <form id="messageForm">
-	                <div class="form-group">
-	                    <label>Enter Message</label>
-	                    <textarea id="message" class="form-control"></textarea>
-	                    
-	                    <input type="submit" class="btn btn-submit" value="Send Message"/>
-	                </div>
-	            </form>
-	        </div>
-	    </div>
-	</div>
-	
-	<!--jQuery-->
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
-	<!--Bootstrap JS-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!--Socket.io-->
-	<script src="../../socket.io/socket.io.js"></script>
-	<!--my Script-->
-	<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="well">
+                        <h3>Online Users</h3>
+                        <ul class="list-group" id="users"></ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="chat" id="chat"></div>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <label>Enter Message</label>
+                            <textarea id="message" class="form-control"></textarea>
+
+                            <input type="submit" class="btn btn-submit" value="Send Message"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--Bootstrap JS-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--Socket.io-->
+        <script src="../../socket.io/socket.io.js"></script>
+        <!--my Script-->
+        <script>
+
+        </script>
 	</body>
 </html>
