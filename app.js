@@ -7,7 +7,7 @@ var users = [];
 var connections = [];
 var PORT = process.env.PORT || 3000;
 server.listen(PORT, function(){
-    console.log("Server running on port ", PORT);
+    console.log("Server running on port", PORT);
 });
 
 app.get('/', function(req, res){
